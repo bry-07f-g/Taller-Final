@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Esto ayuda a que el padding no rompa el ancho */
+}
+
+html, body, #root {
+  height: 100%;
+  background-color: #C9D6DF;
+  font-family: Public Sans;
+}

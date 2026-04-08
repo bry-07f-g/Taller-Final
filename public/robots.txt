@@ -1,0 +1,4 @@
+User-agent:
+Allow: /
+
+Sitemao: https://misitio.vercel.app/sistemap.xml
