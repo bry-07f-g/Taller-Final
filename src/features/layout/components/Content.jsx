@@ -1,6 +1,8 @@
 import * as React from 'react'
 import {  Card, CardContent, Typography, Box, Button } from "@mui/material"
 
+import { NavLink} from 'react-router-dom'
+
 export const Content = () => {
   return (    
     <Box sx={{
@@ -36,6 +38,10 @@ export const Content = () => {
           }}>
           LANDING PAGE - GESTION DE GASTOS
           </Typography>
+
+          <Button sx={Buttonstyle2} component={NavLink} to='https://github.com/bry-07f-g/Taller-Final.git'>
+          Repositorio de GitHub
+          </Button>
 
           <Typography sx={{
           fontSize: { xs: "22px", sm: "32px", md: "42px", lg: "48px" },
@@ -223,6 +229,32 @@ const textStyle = {
 }
 
 const Buttonstyle1 = {
+  borderRadius: "18px",
+  boxShadow: "2px 4px 6px rgba(0,0,0,0.25)",
+  cursor: "pointer",
+  transition: "background-color 0.4s ease",
+
+  "&:hover": {
+      backgroundColor: "#52616B",
+      color: "#C9D6DF"
+    },
+  
+  Height: {
+    xs: "22px",
+    sm: "26px",
+    md: "30px"
+  },
+
+  fontSize: {
+    xs: "0.7rem",
+    sm: "0.8rem",
+    md: "0.9rem"
+  },
+
+}
+
+const Buttonstyle2 = {
+  color: "white",
   borderRadius: "18px",
   boxShadow: "2px 4px 6px rgba(0,0,0,0.25)",
   cursor: "pointer",
