@@ -36,7 +36,7 @@ export const Registrate = () => {
       await registerUser(form); 
       alert("Usuario registrado correctamente");
     } catch (err) {
-      console.error(err);
+      console.log(err.response.data);
       alert("Error al registrar");
     }
   };
